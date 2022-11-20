@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/need_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHOOSE"
+                android:textSize="50dp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/none_gate"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:background="@drawable/none_gate"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <ImageButton
+            android:id="@+id/x_gate"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:background="@drawable/x_gate"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <ImageButton
+            android:id="@+id/h_gate"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:background="@drawable/h_gate"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <ImageButton
+            android:id="@+id/ry_gate"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ry_gate"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setCircuit"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/select"
+        app:layout_constraintTop_toBottomOf="@id/select">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="qc1"
+                android:textColor="@color/black"/>
+
+            <Switch
+                android:id="@+id/circuit1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="qc1"
+                android:textColor="@color/black"/>
+
+            <Switch
+                android:id="@+id/circuit2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="qc2"
+                android:textColor="@color/black"/>
+
+            <Switch
+                android:id="@+id/circuit3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="qc2"
+                android:textColor="@color/black"/>
+
+            <Switch
+                android:id="@+id/circuit4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="qc3"
+                android:textColor="@color/black"/>
+
+            <Switch
+                android:id="@+id/circuit5"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="qc3"
+                android:textColor="@color/black"/>
+
+            <Switch
+                android:id="@+id/circuit6"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setAngles"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/select"
+        app:layout_constraintStart_toEndOf="@+id/setCircuit"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/angles_bar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/angles1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:max="360"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/angles_bar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <SeekBar
+                android:id="@+id/angles2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:max="360"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/angles_bar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <SeekBar
+                android:id="@+id/angles3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:max="360"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/angles_bar4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/angles4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:max="360"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/angles_bar5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <SeekBar
+                android:id="@+id/angles5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:max="360"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/angles_bar6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <SeekBar
+                android:id="@+id/angles6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:max="360"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
